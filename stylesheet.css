@@ -1,20 +1,65 @@
 body {
+    font-family: 'Source Code Pro', monospace;
+        font-family: 'Yellowtail', cursive;
     min-height: 100vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: goldenrod;
+    font-size: 5em;
 }
 
 .divContainer {
     border-style: solid;
     border-color: brown;
+    background-color: wheat;
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 5em 12em 15em 12em;
+    max-width: 960px;
+    box-shadow: 10px 10px 10px 10px  black;
 }
 
 .divElement {
     padding: 20px;
-    background-color: coral;
+    transition: background-color 0.5;
     border-style: solid;
-    border-color: pink;
-    
+    border-color: black;
+    border-width: 0.1px;
+}
+
+.divElement:hover {
+    background-color: rgba (255, 0,0,0.5);
+}
+
+.btnCreateCanvas {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    font-size: 3em;
+    border-radius: 3em;
+}
+
+.btnClearColor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+        padding: 20px;
+        font-size: 3em;
+        border-radius: 3em;
 }
